@@ -1,0 +1,318 @@
+/* ============================
+GLOBAL
+============================= */
+body {
+    margin: 0;
+    background: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* ============================
+HEADER
+============================= */
+.header {
+    background: #181818;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.25);
+}
+
+.header nav a {
+    color: #ddd;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    color: #fff;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e50914;
+}
+
+/* Button Login */
+.login-btn {
+    background: #e50914;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white !important;
+}
+
+.login-btn:hover {
+    background: #b00610;
+}
+
+/* ============================
+HERO SECTION
+============================= */
+.hero {
+    width: 100%;
+    height: 300px;
+    background: url('banner.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.hero-text p {
+    color: #ccc;
+    margin: 10px 0 20px;
+}
+
+.hero-btn {
+    background: #e50914;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    background: #b00610;
+}
+
+/* ============================
+FILM SECTION
+============================= */
+.container {
+    padding: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.film-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.film-card {
+    width: 200px;
+    background: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.film-card:hover {
+    transform: scale(1.06);
+}
+
+.poster {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.film-info {
+    padding: 10px;
+}
+
+.rating {
+    color: gold;
+    font-weight: bold;
+}
+
+/* ============================
+SUPPORT DEVELOPER SECTION
+(HALAMAN BIASA)
+============================= */
+.support-box {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    text-align: center;
+    background: #1f1f1f;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+.support-box h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.support-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: red;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.support-btn:hover {
+    background: #b30000;
+}
+
+/* ============================
+SUPPORT PAGE (FORM PREMIUM)
+============================= */
+.support-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.support-container h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #e50914;
+}
+
+.subtext {
+    font-size: 16px;
+    color: #bbb;
+}
+
+/* Form Group */
+.support-form .form-group {
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #ccc;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    background: #222;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.input-box:hover {
+    background: #333;
+}
+
+.custom-input {
+    display: none;
+    margin-top: 8px;
+}
+
+/* BUTTON */
+.btn-support {
+    width: 100%;
+    padding: 12px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.25s;
+    margin-top: 10px;
+}
+
+.btn-support:hover {
+    background: #b00610;
+}
+
+/* ============================
+PAYMENT CONFIRM, SUCCESS
+============================= */
+.confirm-box, 
+.success-box {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 15px rgba(255,0,0,0.3);
+}
+
+.bukti-img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Small Button */
+.button-small {
+    background:#e50914;
+    color:white;
+    padding:6px 12px;
+    border-radius:6px;
+    text-decoration:none;
+}
+
+.button-small:hover {
+    background:#b00610;
+}
+
+/* ============================
+ANIMATION
+============================= */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================
+running text (marquee)
+============================= */   
+.running-text-box {
+    width: 100%;
+    background: #b30000;
+    color: white;
+    overflow: hidden;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.running-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: running 12s linear infinite;
+}
+
+@keyframes running {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}

@@ -1,0 +1,22 @@
+/* admin.css - simple Netflix-ish admin style */
+body{background:#000;color:#fff;font-family:Inter,Arial,Helvetica,sans-serif}
+.admin-wrap{max-width:1100px;margin:20px auto;padding:18px}
+.admin-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.admin-header h1{margin:0;font-size:20px;color:#fff}
+.btn{background:#E50914;padding:8px 12px;border-radius:8px;color:#fff;text-decoration:none;margin-left:6px;border:none;cursor:pointer}
+.btn.small{padding:6px 8px;font-size:13px}
+.btn.success{background:#2ecc71}
+.btn.warn{background:#f39c12}
+.btn.danger{background:#e74c3c}
+.btn.neutral{background:#7f8c8d}
+.admin-table{width:100%;border-collapse:collapse}
+.admin-table thead th{background:#111;padding:10px;text-align:left;border-bottom:1px solid #222}
+.admin-table tbody td{padding:10px;border-bottom:1px solid #222}
+.thumb{width:100px;height:60px;object-fit:cover;border-radius:6px}
+.small{color:#bbb;font-size:13px}
+.empty{padding:20px;background:#111;border-radius:8px;text-align:center;color:#aaa}
+.actions .inline{display:inline-block;margin-right:6px}
+.status.pending{color:#f1c40f}
+.status.success{color:#2ecc71}
+.status.rejected{color:#e74c3c}
+.search{padding:8px;border-radius:6px;border:1px solid #222;background:#0b0b0b;color:#fff}
