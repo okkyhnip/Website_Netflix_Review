@@ -97,7 +97,7 @@
     <div class="login-box">
 
         <h2>Login Member</h2>
-
+        
         <?php if(isset($_GET["error"])): ?>
             <p class="error">Username atau password salah!</p>
         <?php endif; ?>

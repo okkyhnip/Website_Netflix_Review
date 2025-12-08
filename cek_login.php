@@ -4,14 +4,21 @@ session_start();
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-// baca file user
+// ===== CEK LOGIN ADMIN =====
+if ($username === "admin" && $password === "admin123") {
+    $_SESSION["admin"] = true;
+    $_SESSION["username"] = $username;
+
+    header("Location: admin_dashboard.php");
+    exit;
+}
+
+// ===== CEK LOGIN MEMBER BIASA =====
 $data = json_decode(file_get_contents("users.json"), true);
 
-// cocokkan user
 foreach ($data as $user) {
     if ($user["username"] == $username && $user["password"] == $password) {
 
-        // SIMPAN SESSION
         $_SESSION["login"] = true;
         $_SESSION["username"] = $username;
 
@@ -20,6 +27,6 @@ foreach ($data as $user) {
     }
 }
 
-// kalau gagal
+// Jika gagal login
 header("Location: login.php?error=1");
 exit;

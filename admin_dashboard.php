@@ -24,13 +24,13 @@ a.btn{
 <body>
 
 <h1>Admin Dashboard</h1>
-<p>Halo, <?= htmlspecialchars($_SESSION['admin_user']) ?>!</p>
+<p>Halo, <?= htmlspecialchars($_SESSION['username']) ?>!</p>
 
 <div class="card">
     <h3>Menu Admin</h3>
     <a class="btn" href="admin_bukti.php">Kelola Bukti Transfer</a>
     <a class="btn" href="admin_transaksi.php">Semua Transaksi</a>
-    <a class="btn" href="admin_logout.php">Logout</a>
+    <a class="btn" href="login.php">Logout</a>
 </div>
 
 </body>
